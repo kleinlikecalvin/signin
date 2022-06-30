@@ -1,0 +1,30 @@
+button {
+  --buttonDepth: 8px;
+  --transition: 250ms;
+  --color: 120;
+  --lightColor: hsl(var(--color), 80%, 80%);
+  --middleColor: hsl(var(--color), 70%, 70%);
+  --darkColor: hsl(var(--color), 50%, 50%);
+  --textColor: hsl(var(--color), 30%, 30%);
+  background-color: var(--middleColor);
+  color: var(--textColor);
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  margin: var(--buttonDepth) auto;
+  padding: 8px;
+  box-shadow: 0 var(--buttonDepth) var(--darkColor);
+  width: 40%;
+  font-size: 16px;
+  transition: var(--transition);
+}
+button:hover {
+  background-color: var(--lightColor);
+  transition: var(--transition);
+  cursor: pointer;
+}
+button:active {
+  transition: var(--transition);
+  transform: translateY(var(--buttonDepth));
+  box-shadow: unset;
+}

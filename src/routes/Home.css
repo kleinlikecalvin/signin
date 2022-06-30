@@ -1,0 +1,10 @@
+input {
+  color: var(--textColor);
+  border-radius: 5px;
+  padding: 5px;
+}
+.btnCont {
+  display: flex;
+  gap: 10px;
+  justify-content: space-evenly;
+}
